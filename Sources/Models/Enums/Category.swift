@@ -8,7 +8,7 @@
 import Foundation
 
 public enum Category: String, Codable {
-    case automotive = "automotive"
+    public case automotive = "automotive"
     case bikes = "bikes"
     case electronics = "electronics"
     case fashion = "fashion"
