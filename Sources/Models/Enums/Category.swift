@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Category: String, Codable {
+public enum Category: String, Codable {
     case automotive = "automotive"
     case bikes = "bikes"
     case electronics = "electronics"

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "quinnmurraylib",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jsweenQM/QuinnMurrayLib",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fdd77d70d600706aad61dbbf2edfdc0ba28d31ad"
+      }
+    }
+  ],
+  "version" : 2
+}

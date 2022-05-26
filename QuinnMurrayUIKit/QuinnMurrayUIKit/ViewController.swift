@@ -6,12 +6,14 @@
 //
 
 import UIKit
+import QuinnMurrayLib
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let category: Category = Category.automotive
     }
 
 
