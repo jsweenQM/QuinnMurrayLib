@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let category = QuinnMurrayLib.Category.automotive
+        let category = QMCategory.automotive
     }
 
 
