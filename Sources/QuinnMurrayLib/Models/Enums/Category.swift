@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum QMCategory: String, Codable, CaseIterable {
+enum Category: String, Codable, CaseIterable {
     case automotive = "automotive"
     case bikes = "bikes"
     case electronics = "electronics"
