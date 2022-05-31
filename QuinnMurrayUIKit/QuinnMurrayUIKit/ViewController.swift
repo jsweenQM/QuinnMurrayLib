@@ -13,8 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let category: Category = Category.
+        let category = Category.bikes
 
-
+    }
 }
 
