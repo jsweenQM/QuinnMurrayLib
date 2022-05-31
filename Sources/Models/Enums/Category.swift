@@ -7,8 +7,8 @@
 
 import Foundation
 
-public enum Category: String, Codable {
-    public case automotive = "automotive"
+public enum QMCategory: String, Codable {
+    case automotive = "automotive"
     case bikes = "bikes"
     case electronics = "electronics"
     case fashion = "fashion"

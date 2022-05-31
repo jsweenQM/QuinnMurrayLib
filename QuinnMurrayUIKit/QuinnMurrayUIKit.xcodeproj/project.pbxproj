@@ -13,7 +13,7 @@
 		F229FC69283FDCEC009EDF59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F229FC67283FDCEC009EDF59 /* Main.storyboard */; };
 		F229FC6B283FDCED009EDF59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F229FC6A283FDCED009EDF59 /* Assets.xcassets */; };
 		F229FC6E283FDCED009EDF59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F229FC6C283FDCED009EDF59 /* LaunchScreen.storyboard */; };
-		F229FCB4283FFF4A009EDF59 /* QuinnMurrayLib in Frameworks */ = {isa = PBXBuildFile; productRef = F229FCB3283FFF4A009EDF59 /* QuinnMurrayLib */; };
+		F229FCDD28468167009EDF59 /* QuinnMurrayLib in Frameworks */ = {isa = PBXBuildFile; productRef = F229FCDC28468167009EDF59 /* QuinnMurrayLib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F229FCB4283FFF4A009EDF59 /* QuinnMurrayLib in Frameworks */,
+				F229FCDD28468167009EDF59 /* QuinnMurrayLib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +134,7 @@
 			);
 			name = QuinnMurrayUIKit;
 			packageProductDependencies = (
-				F229FCB3283FFF4A009EDF59 /* QuinnMurrayLib */,
+				F229FCDC28468167009EDF59 /* QuinnMurrayLib */,
 			);
 			productName = QuinnMurrayUIKit;
 			productReference = F229FC5E283FDCEC009EDF59 /* QuinnMurrayUIKit.app */;
@@ -165,7 +165,7 @@
 			);
 			mainGroup = F229FC55283FDCEC009EDF59;
 			packageReferences = (
-				F229FCB2283FFF4A009EDF59 /* XCRemoteSwiftPackageReference "QuinnMurrayLib" */,
+				F229FCDB28468167009EDF59 /* XCRemoteSwiftPackageReference "QuinnMurrayLib" */,
 			);
 			productRefGroup = F229FC5F283FDCEC009EDF59 /* Products */;
 			projectDirPath = "";
@@ -416,7 +416,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F229FCB2283FFF4A009EDF59 /* XCRemoteSwiftPackageReference "QuinnMurrayLib" */ = {
+		F229FCDB28468167009EDF59 /* XCRemoteSwiftPackageReference "QuinnMurrayLib" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jsweenQM/QuinnMurrayLib";
 			requirement = {
@@ -427,9 +427,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F229FCB3283FFF4A009EDF59 /* QuinnMurrayLib */ = {
+		F229FCDC28468167009EDF59 /* QuinnMurrayLib */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F229FCB2283FFF4A009EDF59 /* XCRemoteSwiftPackageReference "QuinnMurrayLib" */;
+			package = F229FCDB28468167009EDF59 /* XCRemoteSwiftPackageReference "QuinnMurrayLib" */;
 			productName = QuinnMurrayLib;
 		};
 /* End XCSwiftPackageProductDependency section */
