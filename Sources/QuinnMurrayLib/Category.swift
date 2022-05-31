@@ -8,7 +8,7 @@
 import Foundation
 
 public enum Category: String, Codable, CaseIterable {
-    public case automotive = "automotive"
+    case automotive = "automotive"
     case bikes = "bikes"
     case electronics = "electronics"
     case fashion = "fashion"
