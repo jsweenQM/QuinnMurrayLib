@@ -16,6 +16,7 @@ public class QuinnV2Client {
             return completion(.failure(.badUrl))
         }
         
+        print("URL: \(url)")
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {
                 return completion(.failure(.decodingError))

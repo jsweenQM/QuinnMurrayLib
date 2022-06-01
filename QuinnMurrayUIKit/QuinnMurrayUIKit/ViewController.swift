@@ -10,13 +10,30 @@ import QuinnMurrayLib
 
 class ViewController: UIViewController {
 
+    var products = [Product]()
+    let client = QuinnV2Client()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print("In View Did Load")
-        let client = QuinnV2Client.init()
         client.getAllProducts { result in
-            print("hello world")
+            switch result {
+            case .success(let products):
+                if let products = products {
+                    print("success!")
+                    
+                }
+            case .failure(let error):
+                print(error.localizedDescription)
+                switch error {
+                case .badUrl:
+                    print("Bad URL")
+                case .noData:
+                    print("No data found")
+                case .decodingError:
+                    print("Error decoding products")
+                }
+            }
         }
     }
 }
