@@ -13,8 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-
+        print("In View Did Load")
+        let client = QuinnV2Client.init()
+        client.getAllProducts { result in
+            print("hello world")
+        }
     }
 }
 
