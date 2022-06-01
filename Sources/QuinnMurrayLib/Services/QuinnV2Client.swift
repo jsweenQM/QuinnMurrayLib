@@ -16,14 +16,13 @@ public class QuinnV2Client {
             return completion(.failure(.badUrl))
         }
         
-        print("URL: \(url)")
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {
-                return completion(.failure(.decodingError))
+                return completion(.failure(.noData))
             }
             
             guard let productsResponse = try? JSONDecoder().decode(ProductsResponse.self, from: data) else {
-                return completion(.failure(.noData))
+                return completion(.failure(.decodingError))
             }
             
             completion(.success(productsResponse.products))
