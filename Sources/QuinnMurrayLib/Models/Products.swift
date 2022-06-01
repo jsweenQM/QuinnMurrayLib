@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct ProductsResponse {
+public struct ProductsResponse: Codable {
     let products: [Product]
 }
 
