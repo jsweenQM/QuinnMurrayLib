@@ -11,7 +11,7 @@ public class QuinnV2Client {
     
     public init() { }
     
-    func getAllProducts(completion: @escaping (Result<[Product]?, NetworkError>) -> Void) {
+    public func getAllProducts(completion: @escaping (Result<[Product]?, NetworkError>) -> Void) {
         guard let url = URL.forAllProducts() else {
             return completion(.failure(.badUrl))
         }
