@@ -23,7 +23,7 @@ public struct Product: Codable {
 //    let imgGroup: [String]
     
     enum CodingKeys: String, CodingKey {
-        case id, price, inStock, lowStock, inStorePickup, title
+        case id, price, inStock, lowStock, inStorePickup//, title
 //        case welcomeDescription = "description"
 //        case imgURL = "imgUrl"
 //        case category, unit, discount, rating, imgGroup
