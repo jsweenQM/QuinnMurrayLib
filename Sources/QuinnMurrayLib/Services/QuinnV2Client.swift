@@ -25,6 +25,7 @@ public class QuinnV2Client {
             let startIndex = s.firstIndex(of: "[") ?? s.startIndex
             print(s[startIndex..<s.endIndex])
             let data2 = s[startIndex..<s.endIndex].data(using: .utf8)!
+            print(data2)
               
 //            let result = try JSONDecoder().decode(YourStructure.self, from: data2)
             
