@@ -21,6 +21,8 @@ public class QuinnV2Client {
                 return completion(.failure(.noData))
             }
             
+            print(data)
+            
             guard let productsResponse = try? JSONDecoder().decode(ProductsResponse.self, from: data) else {
                 return completion(.failure(.decodingError))
             }
