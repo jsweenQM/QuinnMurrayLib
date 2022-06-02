@@ -26,7 +26,6 @@ public class QuinnV2Client {
             let s2 = s[startIndex..<s.endIndex]
             
             guard let data2 = s2.data(using: .utf8) else {
-                print("Error converting str to data")
                 return completion(.failure(.decodingError))
             }
             
