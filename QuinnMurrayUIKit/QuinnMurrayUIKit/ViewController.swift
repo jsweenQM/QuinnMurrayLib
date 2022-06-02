@@ -10,7 +10,7 @@ import QuinnMurrayLib
 
 class ViewController: UIViewController {
 
-    var products = [Product]()
+    var products = [ProductElement]()
     let client = QuinnV2Client()
     
     override func viewDidLoad() {

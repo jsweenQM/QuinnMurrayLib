@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias Product = [ProductElement]
+
 //public struct ProductsResponse: Codable {
 //    let products: [Product]
 //}
@@ -31,12 +33,12 @@ import Foundation
 //    }
 //}
 public struct ProductElement: Codable {
-    let id: ID2
+    let id: ID
     let price: Double
     let inStock, lowStock, inStorePickup: Bool
     let title, productDescription, imgURL: String
-    let category: Category2
-    let unit: Unit2
+    let category: Category
+    let unit: Unit
     let discount: Int
     let rating: Int?
     let imgGroup: [String]
@@ -64,7 +66,7 @@ enum Category2: String, Codable {
     case music = "music"
 }
 
-enum ID2: Codable {
+enum ID: Codable {
     case integer(Int)
     case string(String)
 
@@ -78,7 +80,7 @@ enum ID2: Codable {
             self = .string(x)
             return
         }
-        throw DecodingError.typeMismatch(ID2.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for ID"))
+        throw DecodingError.typeMismatch(ID.self, DecodingError.Context(codingPath: decoder.codingPath, debugDescription: "Wrong type for ID"))
     }
 
     func encode(to encoder: Encoder) throws {
@@ -96,4 +98,3 @@ enum Unit2: String, Codable {
     case kg = "kg"
 }
 
-typealias Product = [ProductElement]
