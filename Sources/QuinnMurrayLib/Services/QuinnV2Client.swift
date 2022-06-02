@@ -21,9 +21,14 @@ public class QuinnV2Client {
                 return completion(.failure(.noData))
             }
             
-            print(data)
+            let s = String(decoding: data, as: UTF8.self)
+            let startIndex = s.firstIndex(of: "[") ?? s.startIndex
+            print(s[startIndex..<s.endIndex])
+            let data2 = s[startIndex..<s.endIndex].data(using: .utf8)!
+              
+//            let result = try JSONDecoder().decode(YourStructure.self, from: data2)
             
-            guard let productsResponse = try? JSONDecoder().decode(ProductsResponse.self, from: data) else {
+            guard let productsResponse = try? JSONDecoder().decode(ProductsResponse.self, from: data2) else {
                 return completion(.failure(.decodingError))
             }
             
