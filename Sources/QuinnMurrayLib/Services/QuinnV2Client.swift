@@ -11,7 +11,7 @@ public class QuinnV2Client {
     
     public init() { }
     
-    public func getAllProducts(completion: @escaping (Result<[Product]?, NetworkError>) -> Void) {
+    public func getAllProducts(completion: @escaping (Result<[ProductElement]?, NetworkError>) -> Void) {
         guard let url = URL.forAllProducts() else {
             return completion(.failure(.badUrl))
         }
@@ -31,11 +31,11 @@ public class QuinnV2Client {
             }
 //            let result = try JSONDecoder().decode(YourStructure.self, from: data2)
             
-            guard let productsResponse = try? JSONDecoder().decode(ProductsResponse.self, from: data2) else {
+            guard let productsResponse = try? JSONDecoder().decode(Product.self, from: data2) else {
                 return completion(.failure(.decodingError))
             }
             
-            completion(.success(productsResponse.products))
+            completion(.success(productsResponse))
         }.resume()
     }
 }
