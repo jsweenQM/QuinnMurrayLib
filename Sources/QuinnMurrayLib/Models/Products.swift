@@ -13,8 +13,8 @@ public struct ProductsResponse: Codable {
 
 public struct Product: Codable {
 //    let id: String
-//    let price: Double
-    let inStock, lowStock, inStorePickup: Bool
+    let price: Double
+//    let inStock, lowStock, inStorePickup: Bool
 //    let title, welcomeDescription, imgURL: String
 //    let category: Category
 //    let unit: Unit
@@ -23,7 +23,7 @@ public struct Product: Codable {
 //    let imgGroup: [String]
     
     enum CodingKeys: String, CodingKey {
-        case inStock, lowStock, inStorePickup//, title
+        case price
 //        case id, price, inStock, lowStock, inStorePickup//, title
 //        case welcomeDescription = "description"
 //        case imgURL = "imgUrl"
