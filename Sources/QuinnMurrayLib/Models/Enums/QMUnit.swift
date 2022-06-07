@@ -7,6 +7,6 @@
 
 import Foundation
 
-public enum Unit: String, Codable {
+public enum QMUnit: String, Codable {
     case kg = "kg"
 }
