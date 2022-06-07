@@ -10,7 +10,7 @@ import Foundation
 typealias Product = [ProductElement]
 
 public struct ProductElement: Codable {
-    let id: ID
+    public let id: ID
     let price: Double
     let inStock, lowStock, inStorePickup: Bool
     let title, productDescription, imgURL: String
