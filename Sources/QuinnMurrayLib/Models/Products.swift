@@ -14,7 +14,7 @@ public struct ProductElement: Codable {
     public let price: Double
     public let inStock, lowStock, inStorePickup: Bool
     public let title, productDescription, imgURL: String
-    public let category: Category
+    public let category: QMCategory
     public let unit: Unit
     public let discount: Int
     public let rating: Int?
