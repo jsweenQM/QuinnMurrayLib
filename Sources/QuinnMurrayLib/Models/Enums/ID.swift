@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum ID: Codable {
+public enum ID: Codable {
     case integer(Int)
     case string(String)
 
