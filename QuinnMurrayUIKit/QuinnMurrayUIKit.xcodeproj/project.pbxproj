@@ -15,6 +15,10 @@
 		F229FC6E283FDCED009EDF59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F229FC6C283FDCED009EDF59 /* LaunchScreen.storyboard */; };
 		F229FCDD28468167009EDF59 /* QuinnMurrayLib in Frameworks */ = {isa = PBXBuildFile; productRef = F229FCDC28468167009EDF59 /* QuinnMurrayLib */; };
 		F235932D284EA32100E5DC0A /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F235932C284EA32100E5DC0A /* ProductViewModel.swift */; };
+		F2D4F76B285295F7008A46E8 /* PromoCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D4F76A285295F7008A46E8 /* PromoCollectionTableViewCell.swift */; };
+		F2D4F76D28538EA9008A46E8 /* PromoTileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D4F76C28538EA9008A46E8 /* PromoTileCollectionViewCell.swift */; };
+		F2D4F76F2853B854008A46E8 /* PromoCollectionTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D4F76E2853B854008A46E8 /* PromoCollectionTableViewCellViewModel.swift */; };
+		F2D4F7712853E8A6008A46E8 /* PromoTileCollectionCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D4F7702853E8A6008A46E8 /* PromoTileCollectionCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		F229FC6F283FDCED009EDF59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F235932C284EA32100E5DC0A /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
 		F235932E2850ECF400E5DC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = QuinnMurrayUIKit/Assets.xcassets; sourceTree = "<group>"; };
+		F2D4F76A285295F7008A46E8 /* PromoCollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCollectionTableViewCell.swift; sourceTree = "<group>"; };
+		F2D4F76C28538EA9008A46E8 /* PromoTileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTileCollectionViewCell.swift; sourceTree = "<group>"; };
+		F2D4F76E2853B854008A46E8 /* PromoCollectionTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoCollectionTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		F2D4F7702853E8A6008A46E8 /* PromoTileCollectionCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoTileCollectionCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,11 +78,12 @@
 				F229FC75283FDD02009EDF59 /* Utils */,
 				F229FC61283FDCEC009EDF59 /* AppDelegate.swift */,
 				F229FC63283FDCEC009EDF59 /* SceneDelegate.swift */,
-				F229FC65283FDCEC009EDF59 /* MainViewController.swift */,
 				F229FC67283FDCEC009EDF59 /* Main.storyboard */,
 				F229FC6A283FDCED009EDF59 /* Assets.xcassets */,
 				F229FC6C283FDCED009EDF59 /* LaunchScreen.storyboard */,
 				F229FC6F283FDCED009EDF59 /* Info.plist */,
+				F2D4F76A285295F7008A46E8 /* PromoCollectionTableViewCell.swift */,
+				F2D4F76C28538EA9008A46E8 /* PromoTileCollectionViewCell.swift */,
 			);
 			path = QuinnMurrayUIKit;
 			sourceTree = "<group>";
@@ -103,6 +112,7 @@
 		F229FC78283FDD13009EDF59 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F229FC65283FDCEC009EDF59 /* MainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 		F229FC7A283FDD40009EDF59 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F2D4F76E2853B854008A46E8 /* PromoCollectionTableViewCellViewModel.swift */,
+				F2D4F7702853E8A6008A46E8 /* PromoTileCollectionCellViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,7 +211,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D4F76D28538EA9008A46E8 /* PromoTileCollectionViewCell.swift in Sources */,
+				F2D4F76B285295F7008A46E8 /* PromoCollectionTableViewCell.swift in Sources */,
+				F2D4F76F2853B854008A46E8 /* PromoCollectionTableViewCellViewModel.swift in Sources */,
 				F229FC66283FDCEC009EDF59 /* MainViewController.swift in Sources */,
+				F2D4F7712853E8A6008A46E8 /* PromoTileCollectionCellViewModel.swift in Sources */,
 				F229FC62283FDCEC009EDF59 /* AppDelegate.swift in Sources */,
 				F235932D284EA32100E5DC0A /* ProductViewModel.swift in Sources */,
 				F229FC64283FDCEC009EDF59 /* SceneDelegate.swift in Sources */,
